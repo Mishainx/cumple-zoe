@@ -1,0 +1,14 @@
+.titleContainer {
+  text-align: center;
+  padding: 5px;
+}
+.titleContainer .Title, .titleContainer .subTitle {
+  font-family: Gabby;
+  color: rgb(68, 10, 169);
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgb(190, 166, 231);
+  font-size: 2rem;
+}
+.titleContainer .subTitle {
+  font-size: 2rem;
+}/*# sourceMappingURL=Title.css.map */
