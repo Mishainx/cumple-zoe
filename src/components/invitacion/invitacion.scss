@@ -7,5 +7,21 @@
     align-items: center;
     overflow: hidden;
     max-height: 100vh;
+    justify-content:center;
+    text-align: center;
+    h2{
+        color: rgb(68, 10, 169);
+        font-size: 2rem;
+
+    }
   }
-  
+
+  .infoInvitacion {
+    background-color: rgb(255, 255, 255, 0.1);
+    width: 80%;
+    font-family: Gabby;
+    color: rgb(68, 10, 169);
+    font-weight: bold;
+    text-shadow: 5px 5px 5px rgb(233, 226, 226);
+    font-size: 1rem;
+    box-shadow:  rgb(68, 10, 169, 0.3) 0px 0px 0px 3px;  }
