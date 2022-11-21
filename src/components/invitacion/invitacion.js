@@ -10,6 +10,7 @@ function Invitacion(){
         <p>Salón: Ciudad del Sol</p>
         <p>Horario: 17:30 a 20hs.</p>
     </div>
+    <button>Confirmar</button>
     
 </div>
 

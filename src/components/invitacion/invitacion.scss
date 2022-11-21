@@ -14,6 +14,23 @@
         font-size: 2rem;
 
     }
+    button {
+        font-family: Gabby;
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 1px;
+        padding: 12px 32px;
+        border-radius: 50px;
+        transition: 0.5s;
+        line-height: 1;
+        background-color: rgb(255,255,255,0.3);
+        color: rgb(68, 10, 169);
+        margin: 10px;    
+    
+        -webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+        border: 2px solid #a468c4;
+      }
   }
 
   .infoInvitacion {
@@ -24,4 +41,6 @@
     font-weight: bold;
     text-shadow: 5px 5px 5px rgb(233, 226, 226);
     font-size: 1rem;
-    box-shadow:  rgb(68, 10, 169, 0.3) 0px 0px 0px 3px;  }
+    box-shadow:  rgb(68, 10, 169, 0.3) 0px 0px 0px 3px; 
+    margin: 20px;
+}
