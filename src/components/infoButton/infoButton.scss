@@ -1,0 +1,18 @@
+.infoButton {
+    font-family: Gabby;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    background-color: rgb(255,255,255,0.3);
+    color: rgb(68, 10, 169);
+
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    border: 2px solid #a468c4;
+  }

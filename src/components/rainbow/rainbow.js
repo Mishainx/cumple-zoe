@@ -1,5 +1,4 @@
 import '../rainbow/rainbow.scss'
-import Recuadro from '../recuadro/recuadro'
 
 function Rainbow(){
     return(
