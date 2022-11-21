@@ -6,6 +6,8 @@ function Rainbow(){
         <>
     <img src='/img/rainbow.png' className='rainbow'/>
     <div className='recuadro'></div>
+    <h1 className='title'>Zoe</h1>
+    <h2 className='subTitle'>5 años</h2>
     </>
 
     )
