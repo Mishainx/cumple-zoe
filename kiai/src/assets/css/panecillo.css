@@ -1,17 +1,21 @@
+.panecilloContainer {
+  width: 100%;
+}
+
 .panecillo {
-  width: 250px;
+  width: 50%;
   position: absolute;
   bottom: 30px;
-  right: 10px;
+  right: 40px;
   z-index: 2;
   transform: scaleX();
   rotate: 15deg;
 }
 
 .globo {
-  width: 15%;
+  width: 20%;
   position: absolute;
-  bottom: 110px;
+  bottom: 100px;
   right: 10px;
   z-index: 2;
 }/*# sourceMappingURL=panecillo.css.map */

@@ -2,7 +2,7 @@ import '../panecillo/panecillo.scss'
 
 function Panecillo(){
 return(
-    <div>
+    <div className='panecilloContainer'>
         <img className='panecillo' src="/img/panecillo.png"/>
         <img className='globo' src="/img/globo.png"/>
     </div>
