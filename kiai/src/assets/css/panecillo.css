@@ -1,7 +1,17 @@
 .panecillo {
-  width: 300px;
+  width: 250px;
   position: absolute;
-  bottom: 20px;
-  right: -10px;
-  overflow: hidden;
+  bottom: 30px;
+  right: 10px;
+  z-index: 2;
+  transform: scaleX();
+  rotate: 15deg;
+}
+
+.globo {
+  width: 15%;
+  position: absolute;
+  bottom: 110px;
+  right: 10px;
+  z-index: 2;
 }/*# sourceMappingURL=panecillo.css.map */

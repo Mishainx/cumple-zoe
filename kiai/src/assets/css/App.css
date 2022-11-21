@@ -1,13 +1,8 @@
 .App {
-  background: rgb(238, 174, 202);
-  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(195, 148, 233) 100%);
+  background-image: url(../public/img/color-background.png);
+  background-position: 500px 0;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-.CardContainer {
-  height: 80vh;
-  width: 80vw;
 }/*# sourceMappingURL=App.css.map */
