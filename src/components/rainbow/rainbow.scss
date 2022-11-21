@@ -12,13 +12,13 @@
     color: rgb(68, 10, 169);
     font-weight: bold;
     text-shadow: 5px 5px 5px rgb(233, 226, 226);
-    font-size: 5rem;
-    top:  80px ;
+    font-size: 4rem;
+    top:  120px ;
     z-index: 2;
 }
 .subTitle{
     @extend .title;
-    top: 180px;
+    top: 220px;
 
 }
 
