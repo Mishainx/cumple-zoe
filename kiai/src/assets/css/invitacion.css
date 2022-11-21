@@ -1,0 +1,10 @@
+.Invitacion {
+  background-image: url(../../../public/img/color-background.png);
+  background-position: 500px 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  max-height: 100vh;
+}/*# sourceMappingURL=invitacion.css.map */
