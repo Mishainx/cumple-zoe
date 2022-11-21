@@ -6,11 +6,8 @@ import Recuadro from './components/recuadro/recuadro';
 function App() {
   return (
     <div className="App">
-      <div className="CardContainer">
-
       <Recuadro/>
       <Panecillo/>
-      </div>
 
     </div>
   );
