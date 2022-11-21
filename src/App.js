@@ -6,6 +6,7 @@ import Recuadro from './components/recuadro/recuadro';
 function App() {
   return (
     <div className="App">
+      <Title/>
       <Recuadro/>
       <Panecillo/>
 
