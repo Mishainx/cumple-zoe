@@ -12,12 +12,12 @@
   color: rgb(68, 10, 169);
   font-weight: bold;
   text-shadow: 5px 5px 5px rgb(233, 226, 226);
-  font-size: 70px;
+  font-size: 60px;
   top: 100px;
   z-index: 2;
 }
 
 .subTitle {
   top: 200px;
-  font-size: 60px;
+  font-size: 50px;
 }/*# sourceMappingURL=rainbow.css.map */
