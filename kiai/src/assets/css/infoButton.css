@@ -11,6 +11,7 @@
   margin: 10px;
   background-color: rgba(255, 255, 255, 0.3);
   color: rgb(68, 10, 169);
+  height: auto;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   border: 2px solid #a468c4;
