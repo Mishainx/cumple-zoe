@@ -7,7 +7,8 @@
   align-items: center;
   overflow: hidden;
   max-height: 100vh;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 200px;
   text-align: center;
 }
 .Invitacion h2 {
@@ -40,5 +41,4 @@
   text-shadow: 5px 5px 5px rgb(233, 226, 226);
   font-size: 1rem;
   box-shadow: rgba(68, 10, 169, 0.3) 0px 0px 0px 3px;
-  margin: 20px;
 }/*# sourceMappingURL=invitacion.css.map */

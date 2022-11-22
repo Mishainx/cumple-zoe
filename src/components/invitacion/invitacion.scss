@@ -7,7 +7,8 @@
     align-items: center;
     overflow: hidden;
     max-height: 100vh;
-    justify-content:center;
+    justify-content:flex-start;
+    padding-top: 200px;
     text-align: center;
     h2{
         color: rgb(68, 10, 169);
@@ -42,5 +43,5 @@
     text-shadow: 5px 5px 5px rgb(233, 226, 226);
     font-size: 1rem;
     box-shadow:  rgb(68, 10, 169, 0.3) 0px 0px 0px 3px; 
-    margin: 20px;
+
 }

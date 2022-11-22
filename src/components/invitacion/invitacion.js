@@ -2,11 +2,11 @@ import '../invitacion/invitacion.scss'
 import Gatirena from '../gatirena/gatirena'
 import Pandy from '../pandy/pandy'
 import HadaGatina from '../hadagatina/hadaGatina'
+import Form from '../form/form'
 
 function Invitacion(){
     return(
 <div className='Invitacion'>
-    <h2>Info</h2>
     <div  className='infoInvitacion'>
         <h3>Te espero para compartir juntos mis 5 años!</h3>
         <p>Día: 30 de diciembre de 2022</p>
