@@ -6,7 +6,7 @@ import Form from '../form/form'
 import { useState } from 'react'
 import React from 'react'
 import {addDoc,collection,getFirestore} from "firebase/firestore"
-import { Link } from 'react-router-dom';
+import InfoIcons from '../infoIcons/infoIcons'
 
 
 function Invitacion(){
@@ -19,8 +19,6 @@ function Invitacion(){
     console.log(formulario)
 
     const sendOrder=()=>{
-        console.log("hola")
-        console.log(asistencia)
     const order ={
             invitado: {name:`${nombre}`},
             asistencia:{name:`${asistencia}`}
@@ -53,6 +51,7 @@ function Invitacion(){
     <p>Horario: 17:30 a 20hs.</p>
     </div>
     <button onClick={()=>formDisplay()}>Confirmar</button>
+    <InfoIcons/>
     </>
 :
 <div className='infoInvitacion'>
