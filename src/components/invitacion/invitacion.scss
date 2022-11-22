@@ -52,14 +52,20 @@
 .formName{
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
   margin: auto;
 }
 .formAssist{
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 90%;
+  align-items: center;
+  text-align: center;
   margin: auto;
+    h3, p{
+      margin: 5px;
+
+    }
     .radioAssist{
       display: flex;
     }

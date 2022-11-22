@@ -58,11 +58,11 @@ function Invitacion(){
 <div className='infoInvitacion'>
 <h2>Asistencia</h2>
 <div className='formName'>
-<label>Tu Nombre</label>
+<h3>Tu Nombre</h3>
 <input type={'text'} name="name" onChange={e=>setNombre(e.target.value)}></input>
 </div>
 <div className='formAssist'>
-    <p>Venís a jugar?</p>    
+    <h3>Venís a jugar?</h3>    
     <div className='radioAssist'>
         <input type="radio" value="Si" name="confirmacion" onChange={e=>setAsistencia(e.target.value)}></input><p>Si, vamos a divertirnos!</p>
     </div>
