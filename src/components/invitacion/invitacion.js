@@ -49,9 +49,9 @@ function Invitacion(){
     <p>Día: 30 de diciembre de 2022</p>
     <p>Salón: Ciudad del Sol</p>
     <p>Horario: 17:30 a 20hs.</p>
+    <InfoIcons/>
     </div>
     <button onClick={()=>formDisplay()}>Confirmar</button>
-    <InfoIcons/>
     </>
 :
 <div className='infoInvitacion'>
