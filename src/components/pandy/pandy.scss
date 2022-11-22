@@ -1,0 +1,13 @@
+.pandyContainer{
+    width: 100%;
+}
+
+.pandy{
+    width: 50%;
+    position: absolute;
+    bottom: 30px;
+    right: 5px;
+    z-index: 2;
+    transform: scaleX(-1);
+
+}

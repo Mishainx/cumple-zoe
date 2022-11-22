@@ -1,4 +1,7 @@
 import '../invitacion/invitacion.scss'
+import Gatirena from '../gatirena/gatirena'
+import Pandy from '../pandy/pandy'
+import HadaGatina from '../hadagatina/hadaGatina'
 
 function Invitacion(){
     return(
@@ -11,6 +14,9 @@ function Invitacion(){
         <p>Horario: 17:30 a 20hs.</p>
     </div>
     <button>Confirmar</button>
+    <Gatirena/>
+    <Pandy/>
+    <HadaGatina/>
     
 </div>
 
