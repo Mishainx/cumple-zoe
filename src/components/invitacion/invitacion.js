@@ -6,6 +6,8 @@ import Form from '../form/form'
 import { useState } from 'react'
 import React from 'react'
 import {addDoc,collection,getFirestore} from "firebase/firestore"
+import { Link } from 'react-router-dom';
+
 
 function Invitacion(){
     const [formulario,setFormulario] = useState(false)
@@ -41,7 +43,7 @@ function Invitacion(){
     }
 
     return(
-        <div className='Invitacion'>
+        <div className='Invitacion'> 
          {!formulario?
     <>
     <div  className='infoInvitacion'>
@@ -55,10 +57,18 @@ function Invitacion(){
 :
 <div className='infoInvitacion'>
 <h2>Asistencia</h2>
-<input type={'text'} placeholder={"Nombre y Apellido"} name="name" onChange={e=>setNombre(e.target.value)}></input>
-<div>    
-<label>Si<input type="radio" value="Si" name="confirmacion" onChange={e=>setAsistencia(e.target.value)}></input></label>
-<label>No<input type="radio" value="No" name="confirmacion" onChange={e=>setAsistencia(e.target.value)}></input></label>
+<div className='formName'>
+<label>Tu Nombre</label>
+<input type={'text'} name="name" onChange={e=>setNombre(e.target.value)}></input>
+</div>
+<div className='formAssist'>
+    <p>Venís a jugar?</p>    
+    <div className='radioAssist'>
+        <input type="radio" value="Si" name="confirmacion" onChange={e=>setAsistencia(e.target.value)}></input><p>Si, vamos a divertirnos!</p>
+    </div>
+    <div className='radioAssist'>
+        <input type="radio" value="No" name="confirmacion" onChange={e=>setAsistencia(e.target.value)}></input><p>No puedo, que se diviertan!</p>
+    </div>
 </div>
 <button onClick={()=>sendOrder()}>Enviar</button>
 

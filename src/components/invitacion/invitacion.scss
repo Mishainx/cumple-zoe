@@ -48,3 +48,20 @@
     box-shadow:  rgb(68, 10, 169, 0.3) 0px 0px 0px 3px; 
 
 }
+
+.formName{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+.formAssist{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+    .radioAssist{
+      display: flex;
+    }
+
+}
