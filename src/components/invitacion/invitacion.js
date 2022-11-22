@@ -5,10 +5,35 @@ import HadaGatina from '../hadagatina/hadaGatina'
 import Form from '../form/form'
 import { useState } from 'react'
 import React from 'react'
+import {addDoc,collection,getFirestore} from "firebase/firestore"
 
 function Invitacion(){
     const [formulario,setFormulario] = useState(false)
+    const [orderiD,setOrderId] = useState("")
+    const [nombre,setNombre] = useState("")
+    const [asistencia,setAsistencia] = useState("")
+
+
     console.log(formulario)
+
+    const sendOrder=()=>{
+        console.log("hola")
+        console.log(asistencia)
+    const order ={
+            invitado: {name:`${nombre}`},
+            asistencia:{name:`${asistencia}`}
+        }
+        
+    if(nombre != "" && asistencia != ""){
+        const db = getFirestore();
+        const Invitaciones = collection(db,"Invitaciones");
+        addDoc(Invitaciones,order).then(({name})=>setOrderId(name));
+        }
+    else{
+        alert("Para confirmar envianos tu nombre y si podrás asistir!")
+    }
+    }
+
 
 
     function formDisplay(){
@@ -16,8 +41,8 @@ function Invitacion(){
     }
 
     return(
-<div className='Invitacion'>
-    {!formulario?
+        <div className='Invitacion'>
+         {!formulario?
     <>
     <div  className='infoInvitacion'>
     <h3>Te espero para compartir juntos mis 5 años!</h3>
@@ -30,12 +55,12 @@ function Invitacion(){
 :
 <div className='infoInvitacion'>
 <h2>Asistencia</h2>
-<input type={'text'} placeholder={"Nombre y Apellido"} name="name"></input>
+<input type={'text'} placeholder={"Nombre y Apellido"} name="name" onChange={e=>setNombre(e.target.value)}></input>
 <div>    
-<label>Si<input type="radio" value="Si" name="confirmacion"></input></label>
-<label>No<input type="radio" value="No" name="confirmacion"></input></label>
+<label>Si<input type="radio" value="Si" name="confirmacion" onChange={e=>setAsistencia(e.target.value)}></input></label>
+<label>No<input type="radio" value="No" name="confirmacion" onChange={e=>setAsistencia(e.target.value)}></input></label>
 </div>
-<button>Enviar</button>
+<button onClick={()=>sendOrder()}>Enviar</button>
 
 </div>
 }
