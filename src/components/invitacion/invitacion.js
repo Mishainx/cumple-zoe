@@ -8,6 +8,7 @@ import {addDoc,collection,getFirestore} from "firebase/firestore"
 import InfoIcons from '../infoIcons/infoIcons'
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import { Link } from 'react-router-dom'
 
 
 function Invitacion(){
@@ -32,15 +33,13 @@ function Invitacion(){
 
 
 Swal.fire({
-  title: 'Sweet!',
-  text: 'Modal with a custom image.',
+  title: 'Gracias por confirmar!',
   imageUrl: '/img/pandi.png',
-  imageWidth: 400,
-  imageHeight: 200,
+  imageWidth: '40%',
   imageAlt: 'Custom image',
-})
-
-        }
+  showConfirmButton: 'false',
+  confirmButtonText: '<a href="/invitacion">Ok</a>'
+        })}
     else{
         alert("Para confirmar envianos tu nombre y si podrás asistir!")
     }
