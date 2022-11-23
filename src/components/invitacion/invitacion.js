@@ -90,9 +90,7 @@ function Invitacion(){
 </div>
 <button onClick={()=>sendOrder()}>Enviar</button>
 </div>
-}
-<HadaGatina/>
-         
+}         
     
 </div>
 
