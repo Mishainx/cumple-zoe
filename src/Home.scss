@@ -12,5 +12,15 @@
   justify-content: flex-end;
 }
 .panecillo{
-  width: 40%;;
+  width: 50%;
+  padding-right: 20px;
+}
+
+.rainbowContainer{
+  display: flex;
+  justify-content: center;
+}
+.rainbow{
+  width: 70%;
+  rotate: 20deg;
 }
