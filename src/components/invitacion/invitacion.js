@@ -7,6 +7,7 @@ import { useState } from 'react'
 import React from 'react'
 import {addDoc,collection,getFirestore} from "firebase/firestore"
 import InfoIcons from '../infoIcons/infoIcons'
+import Swal from 'sweetalert2/dist/sweetalert2.js'
 
 
 function Invitacion(){
@@ -27,7 +28,16 @@ function Invitacion(){
     if(nombre != "" && asistencia != ""){
         const db = getFirestore();
         const Invitaciones = collection(db,"Invitaciones");
-        addDoc(Invitaciones,order).then(({name})=>setOrderId(name));
+        addDoc(Invitaciones,order).then(({id})=>setOrderId(id));
+
+        Swal.fire({
+            title: 'Sweet!',
+            text: 'Modal with a custom image.',
+            imageUrl: 'https://unsplash.it/400/200',
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+          })
         }
     else{
         alert("Para confirmar envianos tu nombre y si podrás asistir!")
@@ -50,10 +60,11 @@ function Invitacion(){
     <p>Salón: Ciudad del Sol</p>
     <p>Horario: 17:30 a 20hs.</p>
     <InfoIcons/>
-    </div>
     <button onClick={()=>formDisplay()}>Confirmar</button>
+    </div>
     </>
 :
+
 <div className='infoInvitacion'>
 <h2>Asistencia</h2>
 <div className='formName'>
@@ -70,8 +81,8 @@ function Invitacion(){
     </div>
 </div>
 <button onClick={()=>sendOrder()}>Enviar</button>
-
 </div>
+
 }
     <Gatirena/>
     <Pandy/>
