@@ -6,6 +6,9 @@ import InfoIcons from '../infoIcons/infoIcons'
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import { Link } from 'react-router-dom'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 
 function Invitacion(){
@@ -14,6 +17,10 @@ function Invitacion(){
     const [nombre,setNombre] = useState("")
     const [asistencia,setAsistencia] = useState("")
     const [confirmacion,setConfirmacion] = useState (false)
+
+    useEffect(()=>{
+        AOS.init({duration:1500, delay:1000})
+    },[])
 
     const sendOrder=()=>{
         
@@ -63,7 +70,7 @@ function Invitacion(){
 <div className='Invitacion'> 
 {!formulario ?
  <>
- <div className='hadaGatinaContainer'>
+ <div className='hadaGatinaContainer' data-aos="fade-down" >
     <img className='hadaGatina' src='/img/hadagatina.png'/>
  </div>
  <div  className='infoInvitacion'>
@@ -86,13 +93,13 @@ Saenz Peña, Buenos Aires.</p>
  </div>
 
  <div className='gatirenaContainer'>
-    <img className='gatirena' src='/img/pandi.png'/>
-     <img className='gatirena r' src='/img/gatirena.png'/>
+    <img className='gatirena' src='/img/pandi.png' data-aos="fade-up"/>
+     <img className='gatirena r' src='/img/gatirena.png' data-aos="fade-up"/>
  </div>
  </>
 :
 <>
-<div className='hadaGatinaContainer'>
+<div className='hadaGatinaContainer' data-aos="fade-down">
     <img className='hadaGatina' src='/img/hadagatina.png'/>
  </div>
  <div className='infoInvitacion'>
@@ -112,8 +119,8 @@ Saenz Peña, Buenos Aires.</p>
 <button onClick={()=>sendOrder()}>Enviar</button>
 </div>
 <div className='gatirenaContainer'>
-    <img className='gatirena' src='/img/pandi.png'/>
-     <img className='gatirena r' src='/img/gatirena.png'/>
+    <img className='gatirena' src='/img/pandi.png'data-aos="fade-up"/>
+     <img className='gatirena r' src='/img/gatirena.png' data-aos="fade-up"/>
  </div>
 </>
 
