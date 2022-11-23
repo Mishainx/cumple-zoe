@@ -1,14 +1,12 @@
 .Invitacion {
     background-image: url(../../../public/img/color-background.png);
-    background-position: 500px 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
     max-height: 100vh;
-    justify-content:flex-start;
-    padding-top: 200px;
+    justify-content: space-around;
     text-align: center;
     h2{
         color: rgb(68, 10, 169);
@@ -88,3 +86,19 @@
     }
 }
 
+.hadaGatina{
+  width: 50%;
+}
+
+.gatirenaContainer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.gatirena{
+  width: 40%;
+}
+
+.r{
+  transform: scaleX(-1) ;
+}

@@ -1,7 +1,4 @@
 import '../invitacion/invitacion.scss'
-import Gatirena from '../gatirena/gatirena'
-import Pandy from '../pandy/pandy'
-import HadaGatina from '../hadagatina/hadaGatina'
 import { useState } from 'react'
 import React from 'react'
 import {addDoc,collection,getFirestore} from "firebase/firestore"
@@ -58,6 +55,9 @@ function Invitacion(){
 <div className='Invitacion'> 
 {!formulario ?
  <>
+ <div className='hadaGatinaContainer'>
+    <img className='hadaGatina' src='/img/hadaGatina.png'/>
+ </div>
  <div  className='infoInvitacion'>
  <h3>Te espero para compartir juntos mis 5 años!</h3>
  <p>Día: 30 de diciembre de 2022</p>
@@ -70,10 +70,18 @@ function Invitacion(){
  }
 
  </div>
+
+ <div className='gatirenaContainer'>
+    <img className='gatirena' src='/img/pandi.png'/>
+     <img className='gatirena r' src='/img/gatirena.png'/>
+ </div>
  </>
 :
-
-<div className='infoInvitacion'>
+<>
+<div className='hadaGatinaContainer'>
+    <img className='hadaGatina' src='/img/hadaGatina.png'/>
+ </div>
+ <div className='infoInvitacion'>
 <h2>Asistencia</h2>
 <div className='formName'>
 <h3>Tu Nombre</h3>
@@ -90,6 +98,12 @@ function Invitacion(){
 </div>
 <button onClick={()=>sendOrder()}>Enviar</button>
 </div>
+<div className='gatirenaContainer'>
+    <img className='gatirena' src='/img/pandi.png'/>
+     <img className='gatirena r' src='/img/gatirena.png'/>
+ </div>
+</>
+
 }         
     
 </div>
