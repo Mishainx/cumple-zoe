@@ -67,6 +67,10 @@ function Invitacion(){
     <img className='hadaGatina' src='/img/hadagatina.png'/>
  </div>
  <div  className='infoInvitacion'>
+    {!confirmacion?
+     <h3>Confirmación recibida!</h3>:
+     <div></div>
+    }
  <h3>Te espero para compartir juntos mis 5 años!</h3>
  <p>Día: 30 de diciembre de 2022</p>
  <p>Salón: Ciudad del Sol</p>
