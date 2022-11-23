@@ -92,7 +92,6 @@ Saenz Peña, Buenos Aires.</p>
     <img className='hadaGatina' src='/img/hadaGatina.png'/>
  </div>
  <div className='infoInvitacion'>
-<h2>Asistencia</h2>
 <div className='formName'>
 <h3>Tu Nombre</h3>
 <input type={'text'} name="name" onChange={e=>setNombre(e.target.value)}></input>
