@@ -89,7 +89,7 @@ Saenz Peña, Buenos Aires.</p>
 :
 <>
 <div className='hadaGatinaContainer'>
-    <img className='hadaGatina' src='/img/hadaGatina.png'/>
+    <img className='hadaGatina' src='/img/hadagatina.png'/>
  </div>
  <div className='infoInvitacion'>
 <div className='formName'>
