@@ -2,12 +2,12 @@ import '../invitacion/invitacion.scss'
 import Gatirena from '../gatirena/gatirena'
 import Pandy from '../pandy/pandy'
 import HadaGatina from '../hadagatina/hadaGatina'
-import Form from '../form/form'
 import { useState } from 'react'
 import React from 'react'
 import {addDoc,collection,getFirestore} from "firebase/firestore"
 import InfoIcons from '../infoIcons/infoIcons'
-import Swal from 'sweetalert2/dist/sweetalert2.js'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 
 function Invitacion(){
@@ -30,14 +30,16 @@ function Invitacion(){
         const Invitaciones = collection(db,"Invitaciones");
         addDoc(Invitaciones,order).then(({id})=>setOrderId(id));
 
-        Swal.fire({
-            title: 'Sweet!',
-            text: 'Modal with a custom image.',
-            imageUrl: 'https://unsplash.it/400/200',
-            imageWidth: 400,
-            imageHeight: 200,
-            imageAlt: 'Custom image',
-          })
+
+Swal.fire({
+  title: 'Sweet!',
+  text: 'Modal with a custom image.',
+  imageUrl: '/img/pandi.png',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Custom image',
+})
+
         }
     else{
         alert("Para confirmar envianos tu nombre y si podrás asistir!")
@@ -48,6 +50,7 @@ function Invitacion(){
 
     function formDisplay(){
         setFormulario(true)
+
     }
 
     return(
