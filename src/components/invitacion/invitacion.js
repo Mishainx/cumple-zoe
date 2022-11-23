@@ -67,7 +67,7 @@ function Invitacion(){
     <img className='hadaGatina' src='/img/hadagatina.png'/>
  </div>
  <div  className='infoInvitacion'>
-    {!confirmacion?
+    {confirmacion?
      <h3>Confirmación recibida!</h3>:
      <div></div>
     }
