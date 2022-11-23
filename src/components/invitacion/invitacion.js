@@ -16,11 +16,10 @@ function Invitacion(){
     const [orderiD,setOrderId] = useState("")
     const [nombre,setNombre] = useState("")
     const [asistencia,setAsistencia] = useState("")
-
-
-    console.log(formulario)
+    const [confirmacion,setConfirmacion] = useState (false)
 
     const sendOrder=()=>{
+        
     const order ={
             invitado: {name:`${nombre}`},
             asistencia:{name:`${asistencia}`}
@@ -30,41 +29,46 @@ function Invitacion(){
         const db = getFirestore();
         const Invitaciones = collection(db,"Invitaciones");
         addDoc(Invitaciones,order).then(({id})=>setOrderId(id));
-
-
-Swal.fire({
-  title: 'Gracias por confirmar!',
-  imageUrl: '/img/pandi.png',
-  imageWidth: '40%',
-  imageAlt: 'Custom image',
-  showConfirmButton: 'false',
-  confirmButtonText: '<a href="/">Ok</a>'
-        })}
+    }
+    
     else{
         alert("Para confirmar envianos tu nombre y si podrás asistir!")
     }
+
+    Swal.fire({
+        title: 'Gracias por confirmar!',
+        imageUrl: '/img/pandi.png',
+        imageWidth: '40%',
+        imageAlt: 'Custom image',
+        showConfirmButton: 'false',
+        confirmButtonText: 'ok'
+              })
+
     }
 
 
 
     function formDisplay(){
         setFormulario(true)
-
     }
 
     return(
-        <div className='Invitacion'> 
-         {!formulario?
-    <>
-    <div  className='infoInvitacion'>
-    <h3>Te espero para compartir juntos mis 5 años!</h3>
-    <p>Día: 30 de diciembre de 2022</p>
-    <p>Salón: Ciudad del Sol</p>
-    <p>Horario: 17:30 a 20hs.</p>
-    <InfoIcons/>
-    <button onClick={()=>formDisplay()}>Confirmar</button>
-    </div>
-    </>
+<div className='Invitacion'> 
+{!formulario ?
+ <>
+ <div  className='infoInvitacion'>
+ <h3>Te espero para compartir juntos mis 5 años!</h3>
+ <p>Día: 30 de diciembre de 2022</p>
+ <p>Salón: Ciudad del Sol</p>
+ <p>Horario: 17:30 a 20hs.</p>
+ <InfoIcons/>
+ {confirmacion? 
+ <button onClick={()=>formDisplay()}>Confirmar</button>:
+ <div></div>
+ }
+
+ </div>
+ </>
 :
 
 <div className='infoInvitacion'>
@@ -84,11 +88,12 @@ Swal.fire({
 </div>
 <button onClick={()=>sendOrder()}>Enviar</button>
 </div>
+ 
+
+
 
 }
-    <Gatirena/>
-    <Pandy/>
-    <HadaGatina/>
+         
     
 </div>
 
