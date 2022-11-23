@@ -38,7 +38,7 @@ Swal.fire({
   imageWidth: '40%',
   imageAlt: 'Custom image',
   showConfirmButton: 'false',
-  confirmButtonText: '<a href="/invitacion">Ok</a>'
+  confirmButtonText: '<a href="/">Ok</a>'
         })}
     else{
         alert("Para confirmar envianos tu nombre y si podrás asistir!")
