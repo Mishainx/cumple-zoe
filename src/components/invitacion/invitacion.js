@@ -93,8 +93,8 @@ Saenz Peña, Buenos Aires.</p>
  </div>
 
  <div className='gatirenaContainer'>
-    <img className='gatirena' src='/img/pandi.png' data-aos="fade-up"/>
-     <img className='gatirena r' src='/img/gatirena.png' data-aos="fade-up"/>
+    <img className='gatirena' src='/img/pandi.png'/>
+     <img className='gatirena r' src='/img/gatirena.png'/>
  </div>
  </>
 :
@@ -119,8 +119,8 @@ Saenz Peña, Buenos Aires.</p>
 <button onClick={()=>sendOrder()}>Enviar</button>
 </div>
 <div className='gatirenaContainer'>
-    <img className='gatirena' src='/img/pandi.png'data-aos="fade-up"/>
-     <img className='gatirena r' src='/img/gatirena.png' data-aos="fade-up"/>
+    <img className='gatirena' src='/img/pandi.png'/>
+     <img className='gatirena r' src='/img/gatirena.png'/>
  </div>
 </>
 
