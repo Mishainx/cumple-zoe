@@ -56,7 +56,7 @@ function Invitacion(){
 {!formulario ?
  <>
  <div className='hadaGatinaContainer'>
-    <img className='hadaGatina' src='/img/hadaGatina.png'/>
+    <img className='hadaGatina' src='/img/hadagatina.png'/>
  </div>
  <div  className='infoInvitacion'>
  <h3>Te espero para compartir juntos mis 5 años!</h3>
