@@ -43,7 +43,8 @@ function Invitacion(){
         showConfirmButton: 'false',
         confirmButtonText: 'ok'
               })
-
+    setFormulario(false)
+    setConfirmacion(true)
     }
 
 
