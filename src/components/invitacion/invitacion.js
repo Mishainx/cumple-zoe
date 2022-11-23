@@ -19,7 +19,7 @@ function Invitacion(){
     const [confirmacion,setConfirmacion] = useState (false)
 
     useEffect(()=>{
-        AOS.init({duration:1500, delay:1000})
+        AOS.init({duration:1200, delay:700})
     },[])
 
     const sendOrder=()=>{

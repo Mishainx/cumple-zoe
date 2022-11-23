@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 
 function InfoButton(){
     useEffect(()=>{
-        AOS.init({duration:1500, delay:1000})
+        AOS.init({duration:1300, delay:700})
     },[])
 
 
