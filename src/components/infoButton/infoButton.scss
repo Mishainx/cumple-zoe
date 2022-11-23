@@ -16,6 +16,12 @@
   }
 
 
+  @media (min-width: 576px) { 
+    .infoButton{
+      font-size: 1.7rem;
+   } 
+ }
+
   @media (min-width: 768px) { 
 .infoButton{
   font-size: 2rem;
