@@ -6,12 +6,12 @@ function App() {
   return (
     <div className="App">
       <div className='rainbowContainer'>
-      <img className="rainbow" src='/img/rainbow.png'/>
+      <img className="rainbow" src='/img/rainbow-2.png'/>
 
       </div>
       <Link to="/invitacion"><InfoButton/></Link>
       <div className='panecilloContainer'>
-        <img className="panecillo" src='/img/panecillo.png'/>
+        <img className="panecillo" src='/img/panecillo-2.png'/>
       </div>
     </div>
 
