@@ -45,6 +45,7 @@ function Invitacion(){
               })
     setFormulario(false)
     setConfirmacion(true)
+
     }
 
 
@@ -89,11 +90,8 @@ function Invitacion(){
 </div>
 <button onClick={()=>sendOrder()}>Enviar</button>
 </div>
- 
-
-
-
 }
+<Gatirena/>
          
     
 </div>
