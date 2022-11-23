@@ -91,7 +91,7 @@ function Invitacion(){
 <button onClick={()=>sendOrder()}>Enviar</button>
 </div>
 }
-<Gatirena/>
+<HadaGatina/>
          
     
 </div>
