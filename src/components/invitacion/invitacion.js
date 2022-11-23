@@ -26,22 +26,30 @@ function Invitacion(){
         const db = getFirestore();
         const Invitaciones = collection(db,"Invitaciones");
         addDoc(Invitaciones,order).then(({id})=>setOrderId(id));
+        Swal.fire({
+            title: 'Gracias por confirmar!',
+            imageUrl: '/img/pandi.png',
+            imageWidth: '40%',
+            imageAlt: 'Custom image',
+            showConfirmButton: 'false',
+            confirmButtonText: 'ok'
+                  })
+
+                  setFormulario(false)
+                  setConfirmacion(true)
     }
     
     else{
-        alert("Para confirmar envianos tu nombre y si podrás asistir!")
+        console.log("hola")
+        Swal.fire({
+            title: 'Para confirmar envianos tu nombre y si podrás asistir!',
+            imageUrl: '/img/catrat.png',
+            imageWidth: '50%',
+            imageAlt: 'Custom image',
+            showConfirmButton: 'false',
+            confirmButtonText: 'ok'
+                  })
     }
-
-    Swal.fire({
-        title: 'Gracias por confirmar!',
-        imageUrl: '/img/pandi.png',
-        imageWidth: '40%',
-        imageAlt: 'Custom image',
-        showConfirmButton: 'false',
-        confirmButtonText: 'ok'
-              })
-    setFormulario(false)
-    setConfirmacion(true)
 
     }
 
@@ -62,6 +70,8 @@ function Invitacion(){
  <h3>Te espero para compartir juntos mis 5 años!</h3>
  <p>Día: 30 de diciembre de 2022</p>
  <p>Salón: Ciudad del Sol</p>
+ <p>Dirección: Nuestra Sra. de Loreto 2371
+Saenz Peña, Buenos Aires.</p>
  <p>Horario: 17:30 a 20hs.</p>
  <InfoIcons/>
  {!confirmacion? 
