@@ -14,3 +14,10 @@
     animation-delay: 0.8s;
     border: 2px solid #a468c4;
   }
+
+
+  @media (min-width: 768px) { 
+.infoButton{
+  font-size: 2rem;
+}
+   }

@@ -25,3 +25,15 @@
   width: 85%;
   margin-top: -10px;
 }
+
+
+@media (min-width: 768px) { 
+  .rainbow{
+    width: 50%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .panecillo{
+    width: 60%;
+  }
+ }
