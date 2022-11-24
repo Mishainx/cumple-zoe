@@ -37,7 +37,7 @@ function Invitacion(){
         addDoc(Invitaciones,order).then(({id})=>setOrderId(id));
         Swal.fire({
             title: 'Gracias por confirmar!',
-            imageUrl: '/img/pandi.png',
+            imageUrl: '/img/gatinati-2.png',
             imageWidth: '40%',
             imageAlt: 'Custom image',
             showConfirmButton: 'false',
