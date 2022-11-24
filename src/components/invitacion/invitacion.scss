@@ -106,3 +106,41 @@
 .r{
   transform: scaleX(-1) ;
 }
+
+
+@media (min-width: 576px) { 
+
+ }
+
+
+ @media (min-width: 768px) {
+  .hadaGatinaContainer{
+    max-width: 200px;
+  }
+  .gatirenaContainer{
+    max-width: 200px;
+  }
+  .infoInvitacion{
+    max-width: 500px;
+    p{
+      font-size: 0.9rem;
+    } 
+  }
+ }
+
+ @media (min-width: 1200px) {
+  .hadaGatinaContainer{
+    max-width: 400px;
+  }
+  .gatirenaContainer{
+    max-width: 400px;
+  }
+  .infoInvitacion{
+    max-width: 800px;
+    p{
+      font-size: 0.9rem;
+    }
+    
+  }
+
+ }
