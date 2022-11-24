@@ -31,6 +31,9 @@
 @media (min-width: 768px) {
 .icono{
     font-size: 1rem;
+    &:hover{
+        background-color: rgba(150, 51, 199, 0.6);
+      }
 }
 }
 
