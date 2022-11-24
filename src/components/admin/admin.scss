@@ -1,0 +1,54 @@
+.Admin {
+    background-image: url(../../../public/img/color-background.png);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .listaInvitados{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 20px;
+
+    table{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+    }
+    h2, td{
+        color: rgb(68, 10, 169);
+        font-size: 15px;
+        font-family: Gabby;
+        text-align: center;
+    }
+    h2{
+    font-size: 30px;
+    }
+  }
+
+  .tutu{
+display: flex;
+flex-direction: column;
+align-items: center;
+box-shadow:  rgba(79, 12, 195, 0.3) 0px 0px 0px 3px;
+    h2{
+      color: rgb(68, 10, 169);
+      font-size: 30px;
+      font-family: Gabby;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+  }
+
+  .itemTotal{
+
+      color: rgb(68, 10, 169);
+      font-size: 20px;
+      font-family: Gabby;
+  }
