@@ -17,6 +17,7 @@ function Invitacion(){
     const [nombre,setNombre] = useState("")
     const [asistencia,setAsistencia] = useState("")
     const [confirmacion,setConfirmacion] = useState (false)
+    const Fecha = new Date()
 
     useEffect(()=>{
         AOS.init({duration:1200, delay:700})
@@ -26,7 +27,8 @@ function Invitacion(){
         
     const order ={
             invitado: {name:`${nombre}`},
-            asistencia:{name:`${asistencia}`}
+            asistencia:{name:`${asistencia}`},
+            fecha:{name:`${Fecha}`}
         }
         
     if(nombre != "" && asistencia != ""){
