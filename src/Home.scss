@@ -16,7 +16,7 @@
 .panecillo{
   width: 90%;
   padding-right: 10px;
-}
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.7));}
 
 .rainbowContainer{
   display: flex;
@@ -25,6 +25,7 @@
 .rainbow{
   width: 85%;
   margin-top: -10px;
+  
 }
 
 @media (min-width: 576px) { 
