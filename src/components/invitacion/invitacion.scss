@@ -115,15 +115,15 @@
 
  @media (min-width: 768px) {
   .hadaGatinaContainer{
-    max-width: 200px;
+    max-width: 400px;
   }
   .gatirenaContainer{
-    max-width: 200px;
+    max-width: 400px;
   }
   .infoInvitacion{
     max-width: 500px;
     p{
-      font-size: 0.9rem;
+      font-size: 0.5rem;
     } 
   }
  }
@@ -136,7 +136,9 @@
     max-width: 400px;
   }
   .infoInvitacion{
-    max-width: 800px;
+    max-width:fit-content;
+    min-width: 400px;
+    padding: 10px 50px;
     p{
       font-size: 0.9rem;
     }
